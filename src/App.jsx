@@ -1,34 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-
+import { Heading } from "@chakra-ui/react";
+import CustomBox from "./container/custom/CustomBox";
+import Navbar from "./components/Navbar";
+const data = [
+  {
+    imgUrl:
+      "https://www.yomeanimo.com/wp-content/uploads/2021/03/yomeanimoyvos-brand.svg",
+    imgAlt: "Yo me animo /LOGO",
+    imgKey: 2,
+  },
+  {
+    imgUrl:
+      "https://www.yomeanimo.com/wp-content/uploads/2022/07/Trabajo-asegurado-AUS.jpg",
+    imgAlt: "Sydney thumbnail",
+    imgKey: 3,
+  },
+];
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar data={data} />
+      <CustomBox background={"primary.lightAqua"}>
+        <Heading
+          fontWeight={"900"}
+          color="primary.darkGranate"
+          textTransform="capitalize"
+          fontSize={"xl"}
+          textAlign="center"
+        >
+          {" "}
+          resultados para:
+          <br /> Australia
+        </Heading>
+      </CustomBox>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
