@@ -19,6 +19,7 @@ const PrensaSection = () => {
       <Box className="prensaCarrousel" as={Stack} spacing={4} align="center">
         {prensaImg.map((e) => (
           <Image
+            key={e.prensaBrand}
             src={e.prensaUrl}
             alt={e.prensaBrand}
             width="md"
