@@ -25,7 +25,9 @@ const InfoCard = ({ data: { infoIMG, infoUrl, infoTitle, infoCopy } }) => {
           >
             {infoTitle}
           </Heading>
-          <Text color="primary.darkGranate">{infoCopy}</Text>
+          <Text fontWeight={500} color="primary.darkGranate">
+            {infoCopy}
+          </Text>
           <Button
             colorScheme={"red"}
             size="lg"
