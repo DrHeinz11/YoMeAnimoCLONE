@@ -1,5 +1,5 @@
 import { Stack, Image, Heading, Text, Button, Box } from "@chakra-ui/react";
-
+import CustomButton from "./CustomButton";
 const InfoCard = ({ data: { infoIMG, infoUrl, infoTitle, infoCopy } }) => {
   return (
     <Box
@@ -28,14 +28,7 @@ const InfoCard = ({ data: { infoIMG, infoUrl, infoTitle, infoCopy } }) => {
           <Text fontWeight={500} color="primary.darkGranate">
             {infoCopy}
           </Text>
-          <Button
-            colorScheme={"red"}
-            size="lg"
-            borderRadius="xl"
-            w="fit-content"
-          >
-            Quiero saber más!
-          </Button>
+          <CustomButton text={"esto es una prueba"} />
         </Box>
       </Stack>
     </Box>
