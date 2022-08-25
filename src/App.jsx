@@ -20,7 +20,7 @@ const data = [
 ];
 function App() {
   return (
-    <Stack gap={4} className="App">
+    <Stack gap={4} className="App" maxWidth="1200px" margin="0 auto">
       {/* <Navbar data={data} />*/}
       <CustomBox background={"primary.lightAqua"}>
         <Heading
