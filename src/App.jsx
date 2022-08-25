@@ -1,7 +1,9 @@
-import { Heading } from "@chakra-ui/react";
+import { Heading, Stack } from "@chakra-ui/react";
 import CustomBox from "./container/custom/CustomBox";
 import CardSearch from "./components/CardSearch";
 import Navbar from "./components/Navbar";
+import InfoCard from "./components/InfoCard";
+import dataCard from "./constant/dataCard";
 const data = [
   /*{
     imgUrl:
@@ -18,7 +20,7 @@ const data = [
 ];
 function App() {
   return (
-    <div className="App">
+    <Stack gap={4} className="App">
       {/* <Navbar data={data} />*/}
       <CustomBox background={"primary.lightAqua"}>
         <Heading
@@ -34,8 +36,11 @@ function App() {
           <br /> Australia
         </Heading>
       </CustomBox>
+      {dataCard.map((data) => (
+        <InfoCard data={data} key={data.infoKey} />
+      ))}
       {/*     <CardSearch dataTag={data} />*/}
-    </div>
+    </Stack>
   );
 }
 
