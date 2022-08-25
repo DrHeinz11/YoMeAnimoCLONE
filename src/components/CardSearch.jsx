@@ -5,11 +5,14 @@ const CardSearch = ({ dataTag }) => {
   return (
     <Stack
       as={Link}
+      href={"https://www.google.com/search"}
+      target={"_blank"}
       borderRadius={"md"}
       w={"350px"}
-      h={"350px"}
+      h={"400px"}
       bg={"#fbf4f4"}
       p={2}
+      py={4}
       margin="0 auto"
       boxShadow="xl"
     >

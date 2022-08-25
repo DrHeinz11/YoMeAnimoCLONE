@@ -6,8 +6,9 @@ const TagFlag = () => {
       size="lg"
       colorScheme="teal"
       borderRadius="full"
-      py={6}
+      py={4}
       width="fit-content"
+      h="fit-content"
     >
       <Avatar
         src="https://static.vecteezy.com/system/resources/previews/007/686/663/non_2x/australia-flag-circle-image-and-icon-free-vector.jpg"

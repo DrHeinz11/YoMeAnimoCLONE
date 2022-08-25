@@ -34,7 +34,7 @@ function App() {
           <br /> Australia
         </Heading>
       </CustomBox>
-      <CardSearch dataTag={data} />
+      {/*     <CardSearch dataTag={data} />*/}
     </div>
   );
 }
