@@ -9,9 +9,9 @@ const InfoCard = ({ data: { infoIMG, infoUrl, infoTitle, infoCopy } }) => {
       py={8}
     >
       <Stack
-        borderRadius={"2xl"}
         margin="0 25px !important"
         bg="#fff"
+        borderRadius={"2xl"}
         boxShadow="md"
       >
         <Image src={infoIMG} alt={infoTitle} borderTopRadius={"2xl"} />
