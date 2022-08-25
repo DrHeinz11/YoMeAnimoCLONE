@@ -1,4 +1,4 @@
-import { Heading, Stack } from "@chakra-ui/react";
+import { Heading, Stack, Box } from "@chakra-ui/react";
 import CustomBox from "./container/custom/CustomBox";
 import CardSearch from "./components/CardSearch";
 import Navbar from "./components/Navbar";
@@ -36,9 +36,11 @@ function App() {
           <br /> Australia
         </Heading>
       </CustomBox>
-      {dataCard.map((data) => (
-        <InfoCard data={data} key={data.infoKey} />
-      ))}
+      <Box bg="primary.lightAqua">
+        {dataCard.map((data) => (
+          <InfoCard data={data} key={data.infoKey} />
+        ))}
+      </Box>
       {/*     <CardSearch dataTag={data} />*/}
     </Stack>
   );

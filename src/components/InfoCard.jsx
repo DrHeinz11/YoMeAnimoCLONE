@@ -11,16 +11,21 @@ const InfoCard = ({ data: { infoIMG, infoUrl, infoTitle, infoCopy } }) => {
       <Stack
         borderRadius={"2xl"}
         margin="0 25px !important"
-        bg={"#ccc"}
+        bg="#fff"
         boxShadow="md"
       >
         <Image src={infoIMG} alt={infoTitle} borderTopRadius={"2xl"} />
         {/*<SvgIcon />*/}
         <Box p={6} as={Stack} direction={"column"} gap={2}>
-          <Heading textTransform="capitalize" fontSize="xl">
+          <Heading
+            color="primary.darkGranate"
+            textTransform="capitalize"
+            fontWeight="900"
+            fontSize="xl"
+          >
             {infoTitle}
           </Heading>
-          <Text>{infoCopy}</Text>
+          <Text color="primary.darkGranate">{infoCopy}</Text>
           <Button
             colorScheme={"red"}
             size="lg"
