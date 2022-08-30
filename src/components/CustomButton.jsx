@@ -5,6 +5,7 @@ const CustomButton = ({ text }) => {
   return (
     <Button
       colorScheme={"red"}
+      bg="#EA2250"
       size="lg"
       borderRadius="xl"
       w="fit-content"

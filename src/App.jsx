@@ -4,6 +4,7 @@ import CardSearch from "./components/CardSearch";
 import Navbar from "./components/Navbar";
 import InfoCard from "./components/InfoCard";
 import dataCard from "./constant/dataCard";
+import CountryContainer from "./components/Country Destino/CountryContainer";
 const data = [
   /*{
     imgUrl:
@@ -41,6 +42,7 @@ function App() {
           <InfoCard data={data} key={data.infoKey} />
         ))}
       </Box>
+      <CountryContainer data={data} />
       {/*     <CardSearch dataTag={data} />*/}
     </Stack>
   );
