@@ -1,7 +1,5 @@
 import { Heading, Stack, Box } from "@chakra-ui/react";
 import CustomBox from "./container/custom/CustomBox";
-import CardSearch from "./components/CardSearch";
-import Navbar from "./components/Navbar";
 import InfoCard from "./components/InfoCard";
 import dataCard from "./constant/dataCard";
 import CountryContainer from "./components/Country Destino/CountryContainer";
