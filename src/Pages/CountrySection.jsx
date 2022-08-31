@@ -1,4 +1,5 @@
 import CustomButton from "../components/CustomButton";
+import { Link } from "react-router-dom";
 import { Stack, Box, Heading } from "@chakra-ui/react";
 import CountryCard from "../components/CountryDestino/CountryCard";
 
@@ -29,8 +30,9 @@ const CountryContainer = () => {
         <CountryCard />
         <CountryCard />
       </Box>
-
-      <CustomButton text="hola esto es una prueba" />
+      <Link to="/working-holiday/visa">
+        <CustomButton text="hola esto es una prueba" />
+      </Link>
     </Stack>
   );
 };
