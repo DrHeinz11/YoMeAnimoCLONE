@@ -10,7 +10,7 @@ import {
   TermUseSection,
   PrensaSection,
   SocialMediaSection,
-} from "../../components/Sections";
+} from "../../Pages";
 import dataCard from "../../constant/dataCard";
 const Home = () => {
   return (

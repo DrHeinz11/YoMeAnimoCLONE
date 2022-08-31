@@ -1,5 +1,5 @@
 import { Stack, Image, Heading, Text, Button, Box } from "@chakra-ui/react";
-import CustomButton from "../CustomButton";
+import CustomButton from "../components/CustomButton";
 const InfoCard = ({ data: { infoIMG, infoUrl, infoTitle, infoCopy } }) => {
   return (
     <Box

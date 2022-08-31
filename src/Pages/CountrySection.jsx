@@ -1,13 +1,13 @@
-import CustomButton from "../CustomButton";
+import CustomButton from "../components/CustomButton";
 import { Stack, Box, Heading } from "@chakra-ui/react";
-import CountryCard from "../CountryDestino/CountryCard";
+import CountryCard from "../components/CountryDestino/CountryCard";
 
 const CountryContainer = () => {
   return (
     <Stack
       direction="column"
       spacing={4}
-      paddingX={2}
+      paddingX={1}
       align="center"
       maxWidth={"100%"}
     >

@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import Navbar from "./container/Navbar/Navbar";
 import Home from "./container/Home/Home";
-import { BlogSection, InfoVisaSection } from "./components/Sections";
+import { BlogSection, InfoVisaSection } from "./Pages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 const data = {
   imgUrl:
