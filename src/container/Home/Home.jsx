@@ -5,24 +5,26 @@ import {
   ExperienceSection,
   InfoCard,
   PromotionCard,
-  BlogSections,
+  BlogSection,
   FormSection,
   TermUseSection,
-} from "../../components";
-
+  PrensaSection,
+  SocialMediaSection,
+} from "../../components/Sections";
+import dataCard from "../../constant/dataCard";
 const Home = () => {
   return (
     <Box>
       <Header />
       <CountrySection />
       <ExperienceSection />
-      <InfoCard />
-      <PromotionCard />
-      <BlogSections />
+      <InfoCard data={dataCard} />
+      {/*    <PromotionCard />
+      <BlogSection />
       <PrensaSection />
       <SocialMediaSection />
       <FormSection />
-      <TermUseSection />
+      <TermUseSection />*/}
     </Box>
   );
 };

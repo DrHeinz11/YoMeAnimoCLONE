@@ -1,5 +1,5 @@
 import { Stack, Image, Heading, Text, Button, Box } from "@chakra-ui/react";
-import CustomButton from "./CustomButton";
+import CustomButton from "../CustomButton";
 const InfoCard = ({ data: { infoIMG, infoUrl, infoTitle, infoCopy } }) => {
   return (
     <Box
@@ -23,18 +23,6 @@ const InfoCard = ({ data: { infoIMG, infoUrl, infoTitle, infoCopy } }) => {
           borderTopRadius={"2xl"}
           objectFit="cover"
         />
-        {/*        <Box h={{ base: "1px", md: "auto" }} margin="0 !important">
-          <Image
-            src={
-              "https://www.yomeanimo.com/wp-content/uploads/2021/03/question-marks.svg"
-            }
-            boxSize={"100px"}
-            position={{ base: "relative", md: "inherit" }}
-            bottom={"56px"}
-            left={"40px"}
-            alt={infoTitle}
-          />
-          </Box>*/}
         <Box
           px={6}
           paddingTop={2}

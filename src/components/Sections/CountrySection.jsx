@@ -1,6 +1,6 @@
 import CustomButton from "../CustomButton";
 import { Stack, Box, Heading } from "@chakra-ui/react";
-import CountryCard from "./CountryCard";
+import CountryCard from "../CountryDestino/CountryCard";
 
 const CountryContainer = () => {
   return (

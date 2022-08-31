@@ -1,5 +1,4 @@
 import { Stack, Image, Box } from "@chakra-ui/react";
-
 const PromotionCard = () => {
   return (
     <Stack direction="row" borderRadius="2xl">

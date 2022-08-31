@@ -1,5 +1,5 @@
 export { default as Header } from "./Header";
-export { default as CountrySection } from "./Country Destino/CountryContainer";
+export { default as CountrySection } from "./CountrySection";
 export { default as ExperienceSection } from "./ExperienceSection";
 export { default as InfoCard } from "./InfoCard";
 export { default as PromotionCard } from "./PromotionCard";
@@ -8,3 +8,4 @@ export { default as PrensaSection } from "./PrensaSection";
 export { default as SocialMediaSection } from "./SocialMediaSection";
 export { default as FormSection } from "./FormSection";
 export { default as TermUseSection } from "./TermUseSection";
+export { default as InfoVisaSection } from "./InfoVisaSection";
