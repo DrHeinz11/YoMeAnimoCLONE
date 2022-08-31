@@ -1,10 +1,15 @@
-import { Stack, Image } from "@chakra-ui/react";
-const Navbar = ({ data }) => {
+import { Stack, Image, Text } from "@chakra-ui/react";
+const Navbar = ({ data: { imgUrl, imgAlt, imgKey } }) => {
   return (
-    <Stack direction="row" spacing={2} wrap={"wrap"}>
-      {data?.map(({ imgUrl, imgAlt, imgKey }) => (
-        <Image src={imgUrl} alt={imgAlt} key={imgKey} h={24} w={40} />
-      ))}
+    <Stack
+      direction="row"
+      gap={2}
+      wrap={"wrap"}
+      align="center"
+      justify="center"
+    >
+      <Image src={imgUrl} alt={imgAlt} key={imgKey} h={9} w={28} />
+      <Text>Esto es un titulo</Text>
     </Stack>
   );
 };
