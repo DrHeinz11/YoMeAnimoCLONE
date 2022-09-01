@@ -1,9 +1,11 @@
 import CustomButton from "../components/CustomButton";
+import arrObj from "../constant/dataCardCountry";
 import { Link } from "react-router-dom";
 import { Stack, Box, Heading } from "@chakra-ui/react";
 import CountryCard from "../components/CountryDestino/CountryCard";
 
 const CountryContainer = () => {
+  console.log(arrObj);
   return (
     <Stack
       direction="column"
@@ -21,14 +23,16 @@ const CountryContainer = () => {
         bg={"gray.200"}
         display="flex"
       >
-        <CountryCard />
-        <CountryCard />
-        <CountryCard />
-        <CountryCard />
-        <CountryCard />
-        <CountryCard />
-        <CountryCard />
-        <CountryCard />
+        {arrObj.map((element) => (
+          <Link to={`/country/${element.title}`} key={element.id}>
+            <CountryCard
+              title={element.title}
+              url={element.url}
+              id={element.id}
+              flagUrl={element.flagUrl}
+            />
+          </Link>
+        ))}
       </Box>
       <Link to="/working-holiday/visa">
         <CustomButton text="hola esto es una prueba" />

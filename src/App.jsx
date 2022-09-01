@@ -16,6 +16,7 @@ function App() {
         <Navbar data={data} />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="/country/:id" element={<BlogSection />} />
           <Route path="/working-holiday/:id" element={<BlogSection />} />
           <Route path="/working-holiday/visa" element={<InfoVisaSection />} />
         </Routes>

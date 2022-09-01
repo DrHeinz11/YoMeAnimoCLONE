@@ -1,4 +1,4 @@
-import { Stack, Image, Heading, Text, Button, Box } from "@chakra-ui/react";
+import { Stack, Image, Heading, Text, Box } from "@chakra-ui/react";
 import CustomButton from "../components/CustomButton";
 const InfoCard = ({ data: { infoIMG, infoUrl, infoTitle, infoCopy } }) => {
   return (
@@ -48,13 +48,13 @@ const InfoCard = ({ data: { infoIMG, infoUrl, infoTitle, infoCopy } }) => {
             color="primary.darkGranate"
             textTransform="capitalize"
             fontWeight="900"
-            fontSize={{ base: "xl", md: "2xl" }}
+            fontSize={{ base: "xl", md: "3xl", lg: "4xl" }}
           >
             {infoTitle}
           </Heading>
           <Text
             fontWeight={500}
-            fontSize={{ base: "md", md: "lg" }}
+            fontSize={{ base: "md", md: "lg", lg: "xl" }}
             color="primary.darkGranate"
           >
             {infoCopy}
