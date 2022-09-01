@@ -5,7 +5,6 @@ import { Stack, Box, Heading } from "@chakra-ui/react";
 import CountryCard from "../components/CountryDestino/CountryCard";
 
 const CountryContainer = () => {
-  console.log(arrObj);
   return (
     <Stack
       direction="column"
@@ -14,7 +13,15 @@ const CountryContainer = () => {
       align="center"
       maxWidth={"100%"}
     >
-      <Heading>Title</Heading>
+      <Heading
+        textAlign="center"
+        weight="black"
+        fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+        lineHeight="1.15"
+        color={"primary.darkGranate"}
+      >
+        Conocé todos los destinos Working Holiday
+      </Heading>
       <Box
         p={4}
         gap={4}

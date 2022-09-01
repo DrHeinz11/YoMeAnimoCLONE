@@ -1,4 +1,4 @@
-import { Stack, Image, Box, Heading, Text } from "@chakra-ui/react";
+import { Stack, Image, Text } from "@chakra-ui/react";
 
 const CountryCard = ({ url, flagUrl, title, id }) => {
   return (

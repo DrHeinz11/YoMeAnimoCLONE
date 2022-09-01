@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Container, Stack } from "@chakra-ui/react";
 import {
   Header,
   CountrySection,
@@ -14,18 +14,20 @@ import {
 import dataCard from "../../constant/dataCard";
 const Home = () => {
   return (
-    <Box>
+    <>
       <Header />
-      <CountrySection />
-      <ExperienceSection />
-      <InfoCard data={dataCard} />
-      {/*    <PromotionCard />
+      <Container maxWidth="7xl" centerContent gap={8} marginTop={8}>
+        <CountrySection />
+        <ExperienceSection />
+        <InfoCard data={dataCard} />
+        {/*    <PromotionCard />
       <BlogSection />
       <PrensaSection />
       <SocialMediaSection />
       <FormSection />
       <TermUseSection />*/}
-    </Box>
+      </Container>{" "}
+    </>
   );
 };
 
