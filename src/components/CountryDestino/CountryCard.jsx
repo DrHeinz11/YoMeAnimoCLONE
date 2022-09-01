@@ -11,7 +11,7 @@ const CountryCard = ({ url, flagUrl, title, id }) => {
     >
       <Image borderTopRadius={"2xl"} maxWidth="none" src={url} height="150px" />
       <Stack direction="row" p={4} spacing={2} align="center" justify="center">
-        <Image src={flagUrl} />
+        <Image src={flagUrl} width="20px" height="17px" />
         <Text
           fontWeight="semibold"
           textTransform="capitalize"
