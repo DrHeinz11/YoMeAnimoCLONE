@@ -10,7 +10,7 @@ const CountryContainer = () => {
       <Heading
         textAlign="center"
         weight="black"
-        fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+        fontSize={{ base: "3xl", md: "4xl" }}
         lineHeight="1.15"
         color={"primary.darkGranate"}
       >

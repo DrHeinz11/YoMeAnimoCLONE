@@ -11,10 +11,10 @@ const Header = () => {
     <>
       <CustomBox background={backgrounds} />
       <Stack
-        textAlign="center"
-        align="center"
+        textAlign={{ base: "center", md: "start" }}
+        align={{ base: "center", md: "start" }}
         spacing={8}
-        paddingX="1rem"
+        paddingX="4rem"
         position={{ base: "initial", lg: "absolute" }}
         mt={{ base: "2rem", md: "none" }}
         top={{ base: "none", lg: "7rem" }}
