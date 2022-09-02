@@ -9,9 +9,15 @@ const CountryCard = ({ url, flagUrl, title, id }) => {
       width="175px"
       _hover={{ boxShadow: "dark-lg" }}
     >
-      <Image borderTopRadius={"2xl"} maxWidth="none" src={url} height="150px" />
+      <Image
+        borderTopRadius={"2xl"}
+        alt={title}
+        maxWidth="none"
+        src={url}
+        height="150px"
+      />
       <Stack direction="row" p={4} spacing={2} align="center" justify="center">
-        <Image src={flagUrl} width="20px" height="17px" />
+        <Image src={flagUrl} alt={`${title} Flag`} width="20px" height="17px" />
         <Text
           fontWeight="semibold"
           textTransform="capitalize"
