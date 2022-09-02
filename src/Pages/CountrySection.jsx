@@ -6,7 +6,13 @@ import CountryCard from "../components/CountryDestino/CountryCard";
 
 const CountryContainer = () => {
   return (
-    <Stack direction="column" spacing={4} align="center" maxWidth={"100%"}>
+    <Stack
+      direction="column"
+      spacing={4}
+      paddingX={1}
+      align="center"
+      maxWidth={"100%"}
+    >
       <Heading
         textAlign="center"
         weight="black"
@@ -16,7 +22,14 @@ const CountryContainer = () => {
       >
         Conocé todos los destinos Working Holiday
       </Heading>
-      <Box p={4} gap={4} width="100%" overflowX={"scroll"} display="flex">
+      <Box
+        p={4}
+        gap={4}
+        width="100%"
+        overflowX={"scroll"}
+        bg={"gray.200"}
+        display="flex"
+      >
         {arrObj.map((element) => (
           <Link to={`/country/${element.title}`} key={element.id}>
             <CountryCard
