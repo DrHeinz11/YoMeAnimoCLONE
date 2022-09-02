@@ -16,6 +16,7 @@ const Header = () => {
         spacing={8}
         paddingX="1rem"
         position={{ base: "initial", lg: "absolute" }}
+        mt={{ base: "2rem", md: "none" }}
         top={{ base: "none", lg: "7rem" }}
         w={{ base: "auto", lg: "50%" }}
         h={{ base: "auto", lg: "30%" }}
